@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+}
+
+h1{
+    margin: 0;
+    text-align: center;
+    font-family: cursive;
+    color: aqua;
+    text-shadow: 2px 2px blue;
+}
+
+p{
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    position: relative;
+    z-index: 1;
+}
+
+#pgreen{
+    color: green;
+    text-shadow: 2px 2px rgb(220, 238, 220);
+}
+#pred{
+    color: red;
+    text-shadow: 2px 2px rgb(235, 212, 212);
+}
+#pblue{
+    background: blue;
+    text-shadow: 2px 2px rgb(223, 225, 235);
+}
+#pyellow{
+    color: rgb(252, 252, 6);
+    text-shadow: 2px 2px  rgb(255, 255, 255);
+}
+
+.board{
+    background: rgb(13 13 13);
+    width:55vw;
+    height: 90vh;
+    margin: auto;
+    border: 1.6rem groove rgb(125, 200, 125);
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section{
+    width: 33%;
+    height: 33%;
+   
+}
+.red{
+    background: red;
+}
+.yellow{
+    background: yellow;
+}
+.green{
+    background-color: green;
+}
+.blue{
+    background: blue;
+}
+
+.help{
+    background: white;
+}
+
+.movem{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    /* background: red; */
+    width: 100%;
+    height: 33.3%;
+    /* margin-top: 3.5em; */
+    display: flex;
+    flex-direction: row;
+    /* top: 50px; */
+}
+
+.movemyell{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 33.3%;
+    background: yellow;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.content{
+    width: 33.3%;
+    height: 100%;
+    /* background: green; */
+    border: 2px solid black;
+}
+
+.item{
+    width: 100%;
+    height: 16.6%;
+    background: white;
+    border-top: 2px solid black;
+}
+.coll{
+    background: blue;
+}
+.col{
+    background: green;
+}
+
+.piece{
+    height: 100%;
+    width: 16.6%;
+    border-left: 2px solid black;
+    background: white;
+}
+
+.pred{
+    background: red;
+}
+
+.pyell{
+    background: yellow;
+}
+
+.pblue{
+    background: blue;
+}
+
+.pgreen{
+    background: green;
+}
+
+.holder{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100;
+    height: 100%;
+    
+}
+
+.hold{
+    margin: auto 1rem;
+    width: 25%;
+    height: 25%;
+    background: white;
+    border: 2px solid black;
+}
+.ludsed{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    margin: 0.1rem auto;
+}
+
+.green{
+    background: green;
+}
+.blue{
+    background: blue;
+}
+.red{
+    background: red;
+}
+.yellow{
+    background: yellow;
+}
+
+.center{
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient( red 5%, blue 30%, yellow 50%, green 90%);
+   
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 679px) {
+    body {
+      background-color: rgb(224, 80, 164);
+      font-family: monospace;
+    }
+
+    .hold {
+        margin: auto .6rem;
+        width: 20%;
+        height: 20%;
+    }
+
+  }
+
+  @media only screen and (max-width: 795px;) {
+      body{
+          background: black;
+      }
+      .hold{
+          margin: auto .5rem;
+          width: 35%;
+          height: 25%;
+      }
+    }
